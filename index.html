@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Factory</title>
+  <meta name="description" content="The public policy pages for Quote Factory, a personal self-hosted tool.">
+  <meta name="theme-color" content="#05060a">
+  <style>
+    :root {
+      --bg: #05060a; --line: #1d212c;
+      --text: #e8eaf0; --muted: #a3a9b8; --faint: #6b7280; --accent: #7c5cff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 60ch; margin: 0 auto; padding: 96px 20px 64px; }
+    .kicker {
+      display: inline-block; font-size: 12px; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); font-weight: 600;
+    }
+    h1 { margin: 12px 0 10px; font-size: clamp(1.7rem, 4vw, 2.3rem); letter-spacing: -0.03em; }
+    p { color: var(--muted); margin: 0 0 16px; }
+    .links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .links a {
+      display: inline-block; padding: 10px 16px; border-radius: 10px;
+      border: 1px solid var(--line); color: var(--text); text-decoration: none;
+      font-size: 0.95rem;
+    }
+    @media (hover: hover) { .links a:hover { border-color: var(--accent); } }
+    .note { margin-top: 36px; color: var(--faint); font-size: 0.9rem; }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <span class="kicker">Quote Factory</span>
+    <h1>A quote channel, run from one machine</h1>
+    <p>Quote Factory renders bilingual Arabic and English quote videos and
+      publishes them to a single YouTube channel. It is self-hosted, used by
+      one person, and runs on that person's own computer.</p>
+    <p>These pages exist because Google requires an OAuth application to
+      publish a privacy policy and terms of service. There is nothing to sign
+      up for here.</p>
+
+    <div class="links">
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+    </div>
+
+    <p class="note">Contact: munes9banifawaz@gmail.com</p>
+  </main>
+</body>
+</html>
